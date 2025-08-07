@@ -2,6 +2,7 @@ import ProfileCard from "@/components/Portfolio/ProfileCard";
 import TimelineItem from "@/components/Portfolio/TimelineItem";
 import SkillsCard from "@/components/Portfolio/SkillsCard";
 import CompanyCard from "@/components/Portfolio/CompanyCard";
+import ProjectCard from "@/components/Portfolio/ProjectCard";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const workExperience = [
@@ -55,6 +56,36 @@ const languageSkills = [
   { name: "English", level: 5 },
   { name: "Spanish", level: 3 },
   { name: "French", level: 2 }
+];
+
+const projects = [
+  {
+    title: "E-Commerce Platform",
+    description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+    technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+    liveUrl: "https://demo-ecommerce.com",
+    githubUrl: "https://github.com/yourusername/ecommerce-platform"
+  },
+  {
+    title: "Task Management App",
+    description: "Collaborative project management tool with real-time updates, team collaboration, and progress tracking.",
+    technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "Docker"],
+    liveUrl: "https://taskmanager-demo.com",
+    githubUrl: "https://github.com/yourusername/task-manager"
+  },
+  {
+    title: "Weather Analytics Dashboard",
+    description: "Data visualization dashboard for weather patterns with interactive charts and predictive analytics.",
+    technologies: ["React", "D3.js", "Python", "FastAPI", "Redis"],
+    liveUrl: "https://weather-analytics.com",
+    githubUrl: "https://github.com/yourusername/weather-dashboard"
+  },
+  {
+    title: "Mobile Fitness Tracker",
+    description: "Cross-platform mobile app for fitness tracking with workout plans, progress monitoring, and social features.",
+    technologies: ["React Native", "TypeScript", "Firebase", "Redux", "Expo"],
+    githubUrl: "https://github.com/yourusername/fitness-tracker"
+  }
 ];
 
 const Index = () => {
@@ -124,6 +155,23 @@ const Index = () => {
             />
           </div>
         </div>
+
+        {/* Projects Section */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold text-foreground mb-8 text-center">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                liveUrl={project.liveUrl}
+                githubUrl={project.githubUrl}
+              />
+            ))}
+          </div>
+        </section>
 
         {/* Contact Information */}
         <footer className="mt-16 bg-portfolio-blue rounded-lg p-8">
