@@ -7,11 +7,11 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 const workExperience = [
   {
-    year: "2025",
-    title: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    location: "🇺🇸 🏢",
-    skills: ["React", "TypeScript", "Node.js", "AWS", "Team Leadership"]
+    year: "2021-2025",
+    title: "Chief Product Officer",
+    company: "Suitest",
+    location: "cz 🏢",
+    skills: ["Jira", "Confluence", "Figma", "PowerBI", "SQL"]
   },
   {
     year: "2024",
