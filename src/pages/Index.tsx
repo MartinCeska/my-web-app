@@ -11,28 +11,32 @@ const workExperience = [
     title: "Senior Software Engineer",
     company: "Tech Innovations Inc.",
     location: "🇺🇸 🏢",
-    skills: ["React", "TypeScript", "Node.js", "AWS", "Team Leadership"]
+    skills: ["React", "TypeScript", "Node.js", "AWS", "Team Leadership"],
+    duration: 1 // 1 year
   },
   {
     year: "2024",
     title: "Full Stack Developer",
     company: "Digital Solutions Co.",
     location: "🇺🇸 🏢",
-    skills: ["Vue.js", "Python", "PostgreSQL", "Docker", "Microservices"]
+    skills: ["Vue.js", "Python", "PostgreSQL", "Docker", "Microservices"],
+    duration: 1 // 1 year
   },
   {
     year: "2023",
     title: "Frontend Developer",
     company: "StartupX",
     location: "🇺🇸 🏢",
-    skills: ["React", "JavaScript", "CSS", "REST APIs", "Git"]
+    skills: ["React", "JavaScript", "CSS", "REST APIs", "Git"],
+    duration: 1 // 1 year
   },
   {
     year: "2022",
     title: "Junior Developer",
     company: "CodeCrafters LLC",
     location: "🇺🇸 🏢",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design"]
+    skills: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design"],
+    duration: 3 // 3 years (2020-2022)
   }
 ];
 
@@ -116,6 +120,7 @@ const Index = () => {
                     company={item.company}
                     location={item.location}
                     skills={item.skills}
+                    duration={item.duration}
                     isLast={index === workExperience.length - 1}
                   />
                 ))}
