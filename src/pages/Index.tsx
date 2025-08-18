@@ -3,6 +3,7 @@ import TimelineItem from "@/components/Portfolio/TimelineItem";
 import SkillsCard from "@/components/Portfolio/SkillsCard";
 import CompanyCard from "@/components/Portfolio/CompanyCard";
 import ProjectCard from "@/components/Portfolio/ProjectCard";
+import IntroVideo from "@/components/Portfolio/IntroVideo";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const workExperience = [
@@ -105,6 +106,11 @@ const Index = () => {
       </header>
 
       <div className="container mx-auto px-6 py-8">
+        {/* Introduction Video - Top Left */}
+        <div className="mb-8">
+          <IntroVideo />
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Left Column - Work Experience */}
