@@ -106,9 +106,14 @@ const Index = () => {
       </header>
 
       <div className="container mx-auto px-6 py-8">
-        {/* Introduction Video - Top Left */}
+        {/* Introduction Section - Video + Profile */}
         <div className="mb-8">
-          <IntroVideo />
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <IntroVideo />
+            <div className="flex-1">
+              <ProfileCard />
+            </div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -134,10 +139,8 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Center Column - Profile */}
+          {/* Center Column - Company Info */}
           <div className="lg:col-span-1 space-y-6">
-            <ProfileCard />
-            
             <CompanyCard
               name="Your Current Company"
               period="2023 - present"
