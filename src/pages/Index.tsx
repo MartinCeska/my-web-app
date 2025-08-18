@@ -99,21 +99,19 @@ const Index = () => {
       {/* Header */}
       <header className="bg-portfolio-blue py-8">
         <div className="container mx-auto px-6">
-          <h1 className="text-3xl font-bold text-center text-portfolio-navy">
-            Professional Portfolio
-          </h1>
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <h1 className="text-3xl font-bold text-portfolio-navy">
+              Professional Portfolio
+            </h1>
+            <IntroVideo />
+          </div>
         </div>
       </header>
 
       <div className="container mx-auto px-6 py-8">
-        {/* Introduction Section - Video + Profile */}
+        {/* Profile Section */}
         <div className="mb-8">
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
-            <IntroVideo />
-            <div className="flex-1">
-              <ProfileCard />
-            </div>
-          </div>
+          <ProfileCard />
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
