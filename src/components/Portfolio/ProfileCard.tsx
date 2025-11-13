@@ -26,20 +26,20 @@ const ProfileCard = () => {
         <div className="space-y-2 w-full">
           <div className="text-left">
             <h3 className="font-medium text-sm text-foreground mb-1">Education</h3>
-            <p className="text-xs text-muted-foreground">BSc. in Computer Science</p>
-            <p className="text-xs text-muted-foreground">MSc. in Software Engineering</p>
+            <p className="text-xs text-muted-foreground">MSc. Service Science, Management and Engineering</p>
+            <p className="text-xs text-muted-foreground">BSc. Information Technology</p>
           </div>
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center pt-2">
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            React
+            Product Management
           </Badge>
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            TypeScript
+            Leadership
           </Badge>
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            Node.js
+            Project Management
           </Badge>
         </div>
       </div>

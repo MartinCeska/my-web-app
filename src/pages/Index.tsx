@@ -8,88 +8,74 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 const workExperience = [
   {
-    year: "2025",
-    title: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    location: "🇺🇸 🏢",
-    skills: ["React", "TypeScript", "Node.js", "AWS", "Team Leadership"],
-    duration: 1 // 1 year
-  },
-  {
     year: "2024",
-    title: "Full Stack Developer",
-    company: "Digital Solutions Co.",
-    location: "🇺🇸 🏢",
-    skills: ["Vue.js", "Python", "PostgreSQL", "Docker", "Microservices"],
-    duration: 1 // 1 year
+    title: "Chief Product Officer",
+    company: "Suitest s.r.o.",
+    location: "🇨🇿 🏢",
+    skills: ["Product Management", "Vision Definition", "Goal Setting", "Customer Satisfaction", "Market Analysis"],
+    duration: 1
   },
   {
-    year: "2023",
-    title: "Frontend Developer",
-    company: "StartupX",
-    location: "🇺🇸 🏢",
-    skills: ["React", "JavaScript", "CSS", "REST APIs", "Git"],
-    duration: 1 // 1 year
+    year: "2020",
+    title: "Project/Product Manager",
+    company: "Suitest s.r.o.",
+    location: "🇨🇿 🏢",
+    skills: ["Roadmap Maintenance", "Feature Specification", "Business Analysis", "Negotiations", "Development Management"],
+    duration: 4
   },
   {
-    year: "2022",
-    title: "Junior Developer",
-    company: "CodeCrafters LLC",
-    location: "🇺🇸 🏢",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery", "Responsive Design"],
-    duration: 3 // 3 years (2020-2022)
+    year: "2018",
+    title: "Business Analyst",
+    company: "Finnair Business Services OÜ",
+    location: "🇪🇪 🏢",
+    skills: ["Business Analysis", "Reporting", "Consulting", "Presentations"],
+    duration: 2
+  },
+  {
+    year: "2016",
+    title: "Product/Project Manager and Consultant",
+    company: "Konica Minolta Business Solutions Europe GmbH",
+    location: "🇩🇪 🏢",
+    skills: ["Gap Analysis", "Consulting", "Feature Specification", "Presentations", "Acceptance Testing"],
+    duration: 2
+  },
+  {
+    year: "2014",
+    title: "Various Roles",
+    company: "Icontio s.r.o.",
+    location: "🇨🇿 🏢",
+    skills: ["Project Management", "Presales", "Consulting", "Customer Support", "Trainings"],
+    duration: 2
   }
 ];
 
 const technicalSkills = [
-  { name: "JavaScript/TypeScript", level: 5 },
-  { name: "React/Next.js", level: 5 },
-  { name: "Node.js", level: 4 },
-  { name: "Python", level: 4 },
-  { name: "AWS/Cloud", level: 3 }
+  { name: "Product Management", level: 5 },
+  { name: "Leadership", level: 5 },
+  { name: "Project Management", level: 5 },
+  { name: "Communication", level: 5 },
+  { name: "Analysis", level: 5 }
 ];
 
 const toolsSkills = [
-  { name: "Git & GitHub", level: 5 },
-  { name: "Docker", level: 4 },
-  { name: "VS Code", level: 5 },
-  { name: "Figma", level: 3 },
-  { name: "Jira", level: 4 }
+  { name: "Jira & Confluence", level: 5 },
+  { name: "MS Office", level: 5 },
+  { name: "Power BI", level: 4 },
+  { name: "Databases", level: 4 },
+  { name: "Figma", level: 4 }
 ];
 
 const languageSkills = [
+  { name: "Czech", level: 5 },
   { name: "English", level: 5 },
-  { name: "Spanish", level: 3 },
-  { name: "French", level: 2 }
+  { name: "Spanish", level: 1 }
 ];
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-    liveUrl: "https://demo-ecommerce.com",
-    githubUrl: "https://github.com/yourusername/ecommerce-platform"
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, team collaboration, and progress tracking.",
-    technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "Docker"],
-    liveUrl: "https://taskmanager-demo.com",
-    githubUrl: "https://github.com/yourusername/task-manager"
-  },
-  {
-    title: "Weather Analytics Dashboard",
-    description: "Data visualization dashboard for weather patterns with interactive charts and predictive analytics.",
-    technologies: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-    liveUrl: "https://weather-analytics.com",
-    githubUrl: "https://github.com/yourusername/weather-dashboard"
-  },
-  {
-    title: "Mobile Fitness Tracker",
-    description: "Cross-platform mobile app for fitness tracking with workout plans, progress monitoring, and social features.",
-    technologies: ["React Native", "TypeScript", "Firebase", "Redux", "Expo"],
-    githubUrl: "https://github.com/yourusername/fitness-tracker"
+    title: "Suitest Testing Platform",
+    description: "Leading product development for automated testing platform for connected TV and streaming devices. Managing product roadmap, feature specifications, and customer satisfaction initiatives.",
+    technologies: ["Product Management", "Market Analysis", "Roadmap Planning", "Feature Specification", "Customer Success"]
   }
 ];
 
@@ -131,12 +117,12 @@ const Index = () => {
           {/* Center Column - Company Info */}
           <div className="lg:col-span-1 space-y-6">
             <CompanyCard
-              name="Your Current Company"
-              period="2023 - present"
-              role="Senior Software Engineer - Tech Lead"
-              location="Based in Your City"
-              description="Leading a team of developers building scalable web applications. Responsible for architecture decisions, code reviews, and mentoring junior developers."
-              education="BSc. in Computer Science, MSc. in Software Engineering"
+              name="Suitest s.r.o."
+              period="2024 - present"
+              role="Chief Product Officer"
+              location="Based in Prague, Czech Republic"
+              description="Leading product vision, strategy and development. Responsible for product management, customer satisfaction, market analysis, roadmap maintenance, and team leadership."
+              education="MSc. Service Science, Management and Engineering (Masaryk University), BSc. Information Technology (Brno University of Technology)"
             />
           </div>
 
@@ -161,16 +147,14 @@ const Index = () => {
 
         {/* Projects Section */}
         <section className="mt-16">
-          <h2 className="text-2xl font-bold text-foreground mb-8 text-center">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h2 className="text-2xl font-bold text-foreground mb-8 text-center">Key Projects</h2>
+          <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
-                liveUrl={project.liveUrl}
-                githubUrl={project.githubUrl}
               />
             ))}
           </div>
@@ -185,15 +169,15 @@ const Index = () => {
             
             <div className="flex justify-center space-x-6">
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:ceska.martin@gmail.com" 
                 className="flex items-center space-x-2 text-portfolio-navy hover:text-portfolio-teal transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>your.email@example.com</span>
+                <span>ceska.martin@gmail.com</span>
               </a>
               
               <a 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://linkedin.com/in/martin-ceska-01" 
                 className="flex items-center space-x-2 text-portfolio-navy hover:text-portfolio-teal transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -203,13 +187,10 @@ const Index = () => {
               </a>
               
               <a 
-                href="https://github.com/yourusername" 
+                href="tel:+420721877377" 
                 className="flex items-center space-x-2 text-portfolio-navy hover:text-portfolio-teal transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <Github className="w-5 h-5" />
-                <span>GitHub</span>
+                <span>+420 721 877 377</span>
               </a>
             </div>
           </div>
