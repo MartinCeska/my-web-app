@@ -15,12 +15,12 @@ const ProfileCard = () => {
         </div>
         
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-foreground">Your Name</h2>
+          <h2 className="text-xl font-semibold text-foreground">Martin Ceska</h2>
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-            <span>🇺🇸</span>
-            <span>Born in United States</span>
+            <span>🇨🇿</span>
+            <span>Born in Czech Republic</span>
           </div>
-          <p className="text-sm text-muted-foreground">Currently living in Your City</p>
+          <p className="text-sm text-muted-foreground">Currently living in Czech Republic</p>
         </div>
 
         <div className="space-y-2 w-full">

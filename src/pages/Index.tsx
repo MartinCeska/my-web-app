@@ -96,17 +96,8 @@ const projects = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-portfolio-blue py-8">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <h1 className="text-3xl font-bold text-portfolio-navy">
-              Professional Portfolio
-            </h1>
-            <IntroVideo />
-          </div>
-        </div>
-      </header>
+      {/* Floating Video */}
+      <IntroVideo />
 
       <div className="container mx-auto px-6 py-8">
         {/* Profile Section */}
