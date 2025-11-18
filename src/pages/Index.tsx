@@ -8,23 +8,23 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 const workExperience = [
   {
-    year: "2024",
+    year: "2022-2025",
     title: "Chief Product Officer",
-    company: "Suitest s.r.o.",
-    location: "🇨🇿 🏢",
-    skills: ["Product Management", "Vision Definition", "Goal Setting", "Customer Satisfaction", "Market Analysis"],
+    company: "Suitest",
+    location: "cz 🏢",
+    skills: ["PLG", "Data-driven", "Figma", "PowerBI", "Vision Definition", "Customer Satisfaction", "Market Analysis"]
     duration: 1
   },
   {
-    year: "2020",
+    year: "2018-2022",
     title: "Project/Product Manager",
     company: "Suitest s.r.o.",
     location: "🇨🇿 🏢",
-    skills: ["Roadmap Maintenance", "Feature Specification", "Business Analysis", "Negotiations", "Development Management"],
+    skills: ["Leading Development", "Product Management", "Roadmap Maintenance", "Feature Specification", "Business Analysis", "Negotiations", "Development Management", "JIRA", "Power BI", "SQL"],
     duration: 4
   },
   {
-    year: "2018",
+    year: "2017-2018",
     title: "Business Analyst",
     company: "Finnair Business Services OÜ",
     location: "🇪🇪 🏢",
@@ -32,15 +32,15 @@ const workExperience = [
     duration: 2
   },
   {
-    year: "2016",
-    title: "Product/Project Manager and Consultant",
+    year: "2015-2017",
+    title: "Consultant for B2B Portals",
     company: "Konica Minolta Business Solutions Europe GmbH",
-    location: "🇩🇪 🏢",
+    location: "cz 🏢",
     skills: ["Gap Analysis", "Consulting", "Feature Specification", "Presentations", "Acceptance Testing"],
     duration: 2
   },
   {
-    year: "2014",
+    year: "2014-2015",
     title: "Various Roles",
     company: "Icontio s.r.o.",
     location: "🇨🇿 🏢",
@@ -74,10 +74,15 @@ const languageSkills = [
 const projects = [
   {
     title: "Suitest Testing Platform",
-    description: "Leading product development for automated testing platform for connected TV and streaming devices. Managing product roadmap, feature specifications, and customer satisfaction initiatives.",
+    description: "Leading product development for automated testing platform for connected TV and streaming devices. Managing product roadmap, feature specifications, and customer satisfaction.",
     technologies: ["Product Management", "Market Analysis", "Roadmap Planning", "Feature Specification", "Customer Success"]
+  },
+  {
+    title: "PMPortal",
+    description: "Leading product development and roll-outs to customers on-site environments for Project management portal. Managing product roadmap, feature specifications, roll-outs, trainings and customer support.",
+    technologies: ["Product Management", "Project Management", "Pre-sales activities", "Market Analysis","Customer Success"]
   }
-];
+ ];
 
 const Index = () => {
   return (
