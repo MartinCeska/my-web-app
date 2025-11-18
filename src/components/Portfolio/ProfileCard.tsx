@@ -15,31 +15,31 @@ const ProfileCard = () => {
         </div>
         
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-foreground">Your Name</h2>
+          <h2 className="text-xl font-semibold text-foreground">Martin Ceska</h2>
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-            <span>🇺🇸</span>
-            <span>Born in United States</span>
+            <span>🇨🇿</span>
+            <span>Born in Czech Republic</span>
           </div>
-          <p className="text-sm text-muted-foreground">Currently living in Your City</p>
+          <p className="text-sm text-muted-foreground">Currently living in Czech Republic</p>
         </div>
 
         <div className="space-y-2 w-full">
           <div className="text-left">
             <h3 className="font-medium text-sm text-foreground mb-1">Education</h3>
-            <p className="text-xs text-muted-foreground">BSc. in Computer Science</p>
-            <p className="text-xs text-muted-foreground">MSc. in Software Engineering</p>
+            <p className="text-xs text-muted-foreground">MSc. Service Science, Management and Engineering</p>
+            <p className="text-xs text-muted-foreground">BSc. Information Technology</p>
           </div>
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center pt-2">
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            React
+            Product Management
           </Badge>
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            TypeScript
+            Leadership
           </Badge>
           <Badge variant="secondary" className="bg-portfolio-teal-light text-portfolio-navy text-xs">
-            Node.js
+            Project Management
           </Badge>
         </div>
       </div>
