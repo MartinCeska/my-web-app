@@ -14,8 +14,9 @@ const SkillsCard = ({ category, skills }: SkillsCardProps) => {
       <div
         key={i}
         className={`w-3 h-3 rounded-full ${
-          i < level ? 'bg-portfolio-teal' : 'bg-muted'
+          i < level ? '' : 'bg-muted'
         }`}
+        style={i < level ? { backgroundColor: '#2b3da1' } : {}}
       />
     ));
   };
