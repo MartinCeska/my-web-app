@@ -25,7 +25,7 @@ const TimelineItem = ({ year, title, company, location, skills, description, isL
       </div>
       
       {/* Content */}
-      <div className="flex-1 pb-8">
+      <div className="flex-1" style={{ paddingBottom: `${timelineHeight + 16}px` }}>
         <h3 className="font-semibold text-foreground">{title}</h3>
         <p className="text-sm text-muted-foreground mb-2">@ {company} {location}</p>
         {description && (

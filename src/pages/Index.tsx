@@ -115,7 +115,7 @@ const projects = [
     company: "Icontio",
     liveUrl: "https://www.icontio.com/pmportal"
   }
-];
+ ];
 
 const Index = () => {
   return (
@@ -189,6 +189,7 @@ const Index = () => {
                 className="flex items-center space-x-2 text-portfolio-navy transition-colors" style={{ color: '#2b3da1' }}
               >
                 <Mail className="w-5 h-5" />
+                <span>ceska.martin@gmail.com</span>
                 <span>ceska.martin@gmail.com</span>
               </a>
               
