@@ -1,13 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
+  company?: string;
   liveUrl?: string;
-  githubUrl?: string;
   imageUrl?: string;
 }
 
@@ -15,8 +15,8 @@ const ProjectCard = ({
   title, 
   description, 
   technologies, 
+  company,
   liveUrl, 
-  githubUrl,
   imageUrl 
 }: ProjectCardProps) => {
   return (
@@ -31,32 +31,24 @@ const ProjectCard = ({
         </div>
       )}
       
+      
       <CardHeader>
         <div className="flex items-start justify-between">
           <CardTitle className="text-lg">{title}</CardTitle>
           <div className="flex gap-2">
-            {githubUrl && (
-              <a 
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-portfolio-teal transition-colors"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-            )}
             {liveUrl && (
               <a 
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-portfolio-teal transition-colors"
+                className="text-muted-foreground transition-colors" style={{ color: '#2b3da1' }}
               >
                 <ExternalLink className="w-4 h-4" />
               </a>
             )}
           </div>
         </div>
+        <div className="text-xs">@ {company}</div>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       
@@ -67,7 +59,9 @@ const ProjectCard = ({
               {tech}
             </Badge>
           ))}
+          
         </div>
+        
       </CardContent>
     </Card>
   );

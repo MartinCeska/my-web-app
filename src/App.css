@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.flag {
+  height: 10px;
+  width: 15px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
